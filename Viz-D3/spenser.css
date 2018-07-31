@@ -1,0 +1,113 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 960px;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+  fill-opacity: .9;
+}
+
+.bar:hover {
+  fill: orange;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.shared, .bar, .label {
+  font-size: 8pt;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.femalebar {
+  fill: #ffcce0;
+}
+
+.malebar {
+  fill: #b3ccff;
+}
+.highlight rect.malebar, .highlight rect.femalebar {
+  fill: #a14538;
+}
+text.malebar, text.femalebar {
+  display: none;
+}
+.highlight text {
+  display: block;
+  fill: #000;
+}
+
+
+#slider-year {
+		  width:  460px;
+		  height: 100px;
+		  margin: 10px;
+		}	
+#grap-container {
+		  width:  260px;
+		  height: 500px;
+		  float: right;
+		  margin-left: 15px;
+		}	
+#map {
+		  width:  500px;
+		  height: 500px;
+		  float: left;
+		}	
+
+#filter span {
+		  margin-left: 15px;
+		}	
+			
+svg {
+	  position: relative;
+	}
+	
+path {
+	  fill: #000;
+	  fill-opacity: .2;
+	  stroke: #fff;
+	  stroke-width: 1.5px;
+	}
+	
+path:hover {
+	  fill: brown;
+	  fill-opacity: .7;
+	}
+	
+
+svg#svg_proj path { 
+    stroke: grey; 
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis_proj path,
+.axis_proj line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.legend_proj {
+    font-size: 14px;
+    font-weight: bold;
+    text-anchor: middle;
+}
