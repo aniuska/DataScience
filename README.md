@@ -10,7 +10,7 @@ Welcome to my repository relate with Data Science projects and coding.
 * Python: Coding with Python
     + [NLP with Spark](https://github.com/aniuska/DataScience/tree/master/Python/spark-NLP)
 * R: Coding with R
-   + [Geographically Weighted Regression (GWR) and mapping results] (https://github.com/aniuska/DataScience/tree/master/R)
+   + [Geographically Weighted Regression (GWR) and mapping results](https://github.com/aniuska/DataScience/tree/master/R)
 * Viz-D3: Visualisation using D3 and Leaflet    
     + [Visualisation engine for SPENSER](https://github.com/aniuska/DataScience/tree/master/Viz-D3)
 * Dissertation: Introduction and literature review
