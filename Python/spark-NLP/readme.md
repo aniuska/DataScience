@@ -38,6 +38,8 @@
 - Custom function (usually aggregation or summation) to iterate the values for a given key. 
 - Output is the final list of (key,  value) tuples
 
+## How it works - TF-IDF
+The TF-IDF score permits to identify words in a collection of documents that help to determine the subject of each document in the collection. A word with high TF.IDF in a document *d* means that it appears in few documents, but it appears many times in *d*. TF.IDF calculate the overall importance of words, transforming text documents on a weighted terms vector. 
 
 ## How it works - Code explained
 
