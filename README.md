@@ -13,3 +13,4 @@ Welcome to my repository relate with Data Science projects and coding.
    + [Geographically Weighted Regression (GWR) and mapping results] (https://github.com/aniuska/DataScience/tree/master/R)
 * Viz-D3: Visualisation using D3 and Leaflet    
     + [Visualisation engine for SPENSER](https://github.com/aniuska/DataScience/tree/master/Viz-D3)
+* Dissertation: [Introduction and literature review](https://github.com/aniuska/DataScience/tree/master/disertation)
