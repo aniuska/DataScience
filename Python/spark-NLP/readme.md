@@ -8,6 +8,11 @@
 - Use MapReduce programming model
 - First Python coding
 
+## Tasks
+- [Read text subject from metadata](https://github.com/aniuska/DataScience/blob/master/Python/spark-NLP/Read%20metada%20to%20Subjects.py)
+- Text pre-processing: Files were very large and have a header with metadata. Therefore it was needed to remove the metadata before the feature extraction, allowing reduce file text size.
+- Feature extraction: The Term Frequency - Inverse Document Frequency (TF-IDF) was used for this task. The process is explained below. [Full code for the feature extraction task] (https://github.com/aniuska/DataScience/blob/master/Python/spark-NLP/tf-idf.py)
+- Modelling: Several classifier were built and compared. The accuracy metric was used to evaluate classifiers. Naive Bayes, Decision Tree and Logistic Regression algorithms were employed. [Full code for the modelling task] (https://github.com/aniuska/DataScience/blob/master/Python/spark-NLP/classifiers.py)
 
 ## How it works - background
 
