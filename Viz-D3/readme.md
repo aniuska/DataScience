@@ -50,4 +50,4 @@ In addition, it provides an easy-to-use interface with data filtering controls a
 to different spatial scales of the results. This tool also provides effective information delivery to researchers and policy makers who 
 are interested in microsimulation and modelling of populations.
 
-Further details of the coding of tool can be found at https://github.com/aniuska/Visualisation-spenser
+Further details of tool can be found at https://github.com/aniuska/Visualisation-spenser
