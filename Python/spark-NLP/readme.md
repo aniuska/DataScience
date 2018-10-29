@@ -14,6 +14,8 @@
 - **Feature extraction**: The Term Frequency - Inverse Document Frequency (TF-IDF) was used for this task. The process is explained below. [Full code for the feature extraction task] (https://github.com/aniuska/DataScience/blob/master/Python/spark-NLP/tf-idf.py)
 - **Modelling**: Several classifier were built and compared. The accuracy metric was used to evaluate classifiers. Naive Bayes, Decision Tree and Logistic Regression algorithms were employed. [Full code for the modelling task] (https://github.com/aniuska/DataScience/blob/master/Python/spark-NLP/classifiers.py)
 
+# Featute Extraction
+
 ## How it works - background
 
 - NLP for large-scale text classification ( > 100k books from project Gutenberg)
