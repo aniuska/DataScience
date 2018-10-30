@@ -40,12 +40,11 @@ skewed curves.
 when using the normal smoother.
 * Maths: the best result was obtained for the normal assumption.
 
-Portuguese            |Accuracy | RMSE
+                      |Accuracy | RMSE
 ----------------------|---------|------
 Portuguese            |         |
 NB (Best Performance) | 82.7%   | 0.41
 NB (Cortez & Silva)   | 84.6%   | - -
-
 Maths                 |         |
 NB (Best Performance) | 70.7%   | 0.54
 NB (Cortez & Silva)   | 67.1%   | - -
