@@ -16,6 +16,8 @@ binary Pass/Fail scale.
 * A basic statistical summary and histogram plots created to determine probabilistic distribution of data.
 * Zero p value indicates dependence amongst features.
 
+![Histograms of the variables](EDA.png)
+
 ## Hypothesis
 * How well can student performance be predicted using demographic, social/emotional and school related features?
 * What are the factors that affect student performance?
@@ -38,25 +40,27 @@ skewed curves.
 when using the normal smoother.
 * Maths: the best result was obtained for the normal assumption.
 
+Portuguese            |Accuracy | RMSE
+----------------------|---------|------
+Portuguese            |         |
+NB (Best Performance) | 82.7%   | 0.41
+NB (Cortez & Silva)   | 84.6%   | - -
+
+Maths                 |         |
+NB (Best Performance) | 70.7%   | 0.54
+NB (Cortez & Silva)   | 67.1%   | - -
+
 ## Analysis and Critical Evaluation
 
-Best accuracy was achieved by DT on Portuguese data set but NB
-outperformed on Maths. Both DT and NB produce accuracy scores
-comparable to original paper by Cortez and Silva. However, such is the
-class imbalance between pass and failure, F1 score is perhaps a better
-indicator of the robustness of DT model. These scores are much lower
-indicating the difficulty in predicting failure.
-
-The result of NB classifiers shows that the learning process for these  data sets is better when the prediction (posterior) is determined by a mixture of the prior knowledge and the evidence provided by the data. NB accuracy was very good despite that features were not independent among them given the classes.
+NB produce accuracy scores comparable to original paper by Cortez and Silva however NB outperformed on Maths. The result of NB classifiers shows that the learning process for these  data sets is better when the prediction (posterior) is determined by a mixture of the prior knowledge and the evidence provided by the data. NB accuracy was very good despite that features were not independent among them given the classes.
 
 ROC curve show the class prediction for each observation on NB. In general all models perform consistently and the trade-offs between TP and FP (costs) is good. However the TPRs for some observations were low on two models for Math data set indicating some randomly guessing.
 
+![ROC Curves for NB in Test set](ROC.png)
+
 ## Conclusions and Future Work
 
-Two different cross-validation techniques were used. Accuracy metric, F1 score and ROC curve were used for
-getting better insight from algorithm performance. NB demonstrates to be good-enough for this application
-despite features dependence and gives the best result for the smaller data set (Math). DT shown to be good at
-knowledge representation. NB learns incrementally and DT gives better insight about underlying data.
+Accuracy metric and ROC curve were used for getting better insight from algorithm performance. NB demonstrates to be good-enough for this application despite features dependence and gives the best result for the smaller data set (Math).  NB learns incrementally.
 
 Extension of models beyond a simple binary pass/fail classifier to incorporate multiple classes (e.g. grades A to F)
 and regression analysis. Investigation of other ML algorithms such as Random Forests and ensemble methods.
