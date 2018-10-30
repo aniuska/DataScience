@@ -63,6 +63,6 @@ and regression analysis. Investigation of other ML algorithms such as Random For
 
 ## References
 
-1 Paulo Cortez and Alice Silva, Using Data Mining to Predict Secondary School Student Performance.
-2 Kotsiantis S.; Pierrakeas C.; and Pintelas P., 2004. Pre-dicting Students’ Performance in Distance Learning Using Machine Learning Techniques. Applied Artificial Intelligence (AAI), 18, no. 5, 411–426.
-3 Kevin Murphy, Machine Learning A Probablistic Model P546-552, MIT 2012.
+[1] Paulo Cortez and Alice Silva, Using Data Mining to Predict Secondary School Student Performance.      
+[2] Kotsiantis S.; Pierrakeas C.; and Pintelas P., 2004. Pre-dicting Students’ Performance in Distance Learning Using Machine Learning Techniques. Applied Artificial Intelligence (AAI), 18, no. 5, 411–426.    
+[3] Kevin Murphy, Machine Learning A Probablistic Model P546-552, MIT 2012.
