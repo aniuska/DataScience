@@ -10,7 +10,7 @@ Several supervised classification models were trained using a cross validation a
 
 The diagram below shows the steps followed by a face recognition application. A detailed description of our approach for each step is given in separate subsections.
 
-[Steps followed by  a face recognition application](faceRecognition-Steps.png)
+![Steps followed by  a face recognition application](images/faceRecognition-Steps.png)
 
 ## Data and Methodology 
 
@@ -32,7 +32,7 @@ Features are patterns found in an image that distinguish them from each other. T
 
 HOG is a feature descriptor that encodes shape and spatial information, counting occurrences of gradient orientation in localized portions of an image. This method is good at detecting people. However it is not invariant to scale.  The length of our HOG feature vector was 20736 features per face. The image below displays HOG features for one of my face image in the database.
 
-[HOG and LBP features representation](Feature-Representation.jpg)
+![HOG and LBP features representation](images/Feature-Representation.jpg)
 
 LBP features can provide robustness against variation in illumination and rotation but not invariant to scale. LBP features are often used to detect faces because they work well for representing fine-scale textures. Our LBP feature vector’s length was 57 features per face. See image above which displays a LBP features, as a block, for one of my face image in the database.
 
@@ -50,7 +50,7 @@ DT is a non-probabilistic technique whereby the input space is recursively parti
 
 In our experiments, we trained six classifiers - feeding each machine learning method with HOG and LBP feature vectors. The table below shows the accuracy results on the evaluation dataset for the six combinations. We also run an experiment using SVM with bag of features to see the performance of SVM using a more robust feature extraction (MSER and SURF).
 
-[Classifiers' accuracy performance](ML-comparation.png)
+![Classifiers' accuracy performance](images/ML-comparation.png)
 
 The average accuracy was the performance metric employed. The best accuracy was for SVM combined with HOG features, which was 96%. However it got the worst performance when used with LBP features. SVM combined with bag of features shown good performance as well. See above the accuracy performance table.
 
@@ -72,11 +72,11 @@ Skin = (80 < U < 130) and
 
 A binary image is produced, assigning a value of 1 to any pixel that satisfies the above threshold and 0 otherwise. The image below shows both the face detected and the skin segmentation method applied on the face image. 
 
-[Al-Tairi et al.'s skin segmentation](skin-segmentation.jpg)
+![Al-Tairi et al.'s skin segmentation](images/skin-segmentation.jpg)
 
 We also used region shape properties of binary image, using the Matlab regionporps function, to help filter out non-face detection (false positive). We utilised an area (A) with threshold at 2200 to discriminate the detected objects with smaller area. The Euler number (E) was also used to reject regions which have no holes under the assumption that a face region will contain at least one hole. Circularity metric (C) was employed as well – calculated as 4*pi*Area/Perimeter^2. These properties were not helpful removing all false positives due that some false detection has bigger area than the detected faces (true positive) or even similar values on other properties compared with a face. For example, the ratio aspect on the image above is similar to the image below (false positive) whereas the area is much bigger (A: 46752) on the false positive image below. It was difficult to choose the right threshold based on area length or other shape properties. 
 
-[False Positive detection](False-positive.jpg)
+![False Positive detection](images/False-positive.jpg)
 
 Another approach was to train a SVM classifier that filter out non-faces based on region shape properties (as features). A database of shape properties was created. This approach did not resolve the problem of false negative either. 
 
@@ -88,10 +88,12 @@ In the image below, the face recognition accuracy was 50%. Notice that the face 
 
 The image below, one of my own images, was classified incorrectly. This image had similar background to images on the database but illumination was different. HOG descriptor cannot capture changes in illumination.
 
-### Conclusion
+### Conclusion and Future work
 
 Face recognition is not an easy task. It requires the application of many techniques for detecting and classifying faces. We have done a number of experiments combining supervised machine learning algorithms and features extraction methods. A Cross validation technique was employed to choose the best classifier. SVM with HOG showed the best performance and was used for the recognition task.  In general SVM classifier proved to work well as a face classifier.  
 
 The major drawback of our approach was the methods used to filter out non-faces (false positive). These approaches were not effective for our database sample. To improve accuracy, we could train our own face detector for faces in our class using cascade classification model. Another better approach is the use of deep learning techniques, such as Deep NN or Convolutional NN, to add multilayer levels of abstraction for our face images database. It will capture the most significant features and improve performance.
 
+### References
 
+Al-Tairi et al. 2014. Skin Segmentation Using YUV and RGB Color Spaces.J Inf Process Syst, Vol.10, No.2, pp.283~299, June 2014. Available at http://52.68.174.105:8080/jips/dlibrary/JIPS_v10_no2_paper9.pdf[Accessed: 23 March 2016].
