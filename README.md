@@ -17,4 +17,4 @@ Welcome to my repository relate with Data Science projects and coding.
     +  [Effects of varying geographic scale in the accuracy of variable selection using regularised regression methods](https://github.com/aniuska/DataScience/tree/master/disertation)
 * Matlab: Coding with Matlab
     + [Classification project](https://github.com/aniuska/DataScience/tree/master/Matlab/Classification)
-    + [Face recognition project]
+    + [Face recognition project](https://github.com/aniuska/DataScience/tree/master/Matlab/Face Recognition)
