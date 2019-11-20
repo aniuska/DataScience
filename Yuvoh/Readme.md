@@ -21,8 +21,8 @@ URL 	5
 1. Data exploratory analysis
 Assess quality of the data, plot target distribution, missing data and relationship between target and fearures. Coding and furthe information can be found on 
 2. Feature engineering
-Missinga data imputation, encoding of categorical feautures and create new features. Coding and furthe information can be found on 
+Missinga data imputation, encoding of categorical feautures and create new features. Coding and furthe information can be found on [Feature Engineering](Feature Engineering.ipynb) 
 3. Model training/testing
-The number of feature used in the modeling was 35. Boosting Gradient Regressor model was created and GridSearch was utilised the optimal hyper-parameters. Coding and furthe information can be found on 
+The number of feature used in the modeling was 35. Boosting Gradient Regressor model was created and GridSearch was utilised the optimal hyper-parameters. Coding and furthe information can be found on [Modeling](Models.ipynb)
 
 
